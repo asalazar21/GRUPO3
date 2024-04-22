@@ -31,7 +31,9 @@ class ClienteForm(forms.ModelForm):
         model = Cliente
         fields = '__all__'
         
-        
+
+# IGUAL HAY QUE BORRAR ESTOS ULTIMOS 3(si no vamos a querer usarlos)
+# SI AL FINAL NO LO USAMOS(XXX_form.html), BORRARLO DE AQUI
 class PrioridadForm(forms.ModelForm):
     class Meta:
         model = Prioridad
