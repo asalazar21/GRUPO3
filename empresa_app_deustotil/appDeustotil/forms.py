@@ -17,7 +17,7 @@ class EmpleadoForm(forms.ModelForm):
         model = Empleado
         fields = '__all__'
 
-class EquipoForm(forms.ModelForm):
+class TareaForm(forms.ModelForm):
     class Meta:
         model = Tarea
         fields = '__all__'
@@ -25,14 +25,13 @@ class EquipoForm(forms.ModelForm):
             'fecha_inicio': forms.DateInput(attrs={'type': 'date'}),
             'fecha_fin': forms.DateInput(attrs={'type': 'date'}),
         }
-
-
-
-class ProveedorForm(forms.ModelForm):
+        
+class ClienteForm(forms.ModelForm):
     class Meta:
         model = Cliente
         fields = '__all__'
-
+        
+        
 class PrioridadForm(forms.ModelForm):
     class Meta:
         model = Prioridad
@@ -49,7 +48,3 @@ class EstadoTareaForm(forms.ModelForm):
         fields = '__all__'
     
 
-class ClienteForm(forms.ModelForm):
-    class Meta:
-        model = Cliente
-        fields = '__all__'
